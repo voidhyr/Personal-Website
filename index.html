@@ -43,6 +43,9 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Services</a>
           </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a>
+          </li>
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
           </li>
@@ -50,40 +53,40 @@
       </div>
     </div>
   </nav>
- <!-- Masthead-->
-<header class="masthead text-white text-center hero-masthead">
-  <div class="container d-flex align-items-center flex-column hero-content">
-    <!-- Masthead Avatar Image-->
-    <img class="masthead-avatar mb-4 about-photo" src="assets/img/photo046.jpg" alt="Portrait of Dani Sam" />
+  <!-- Masthead-->
+  <header class="masthead text-white text-center hero-masthead">
+    <div class="container d-flex align-items-center flex-column hero-content">
+      <!-- Masthead Avatar Image-->
+      <img class="masthead-avatar mb-4 about-photo" src="assets/img/photo046.jpg" alt="Portrait of Dani Sam" />
 
-    <!-- Small role badge -->
-    <span class="hero-badge mb-2">INFRASTRUCTURE • SYSTEMS • DISTRIBUTED
-</span>
+      <!-- Small role badge -->
+      <span class="hero-badge mb-2">INFRASTRUCTURE • SYSTEMS • DISTRIBUTED
+      </span>
 
-    <!-- Masthead Heading-->
-    <h1 class="masthead-heading text-uppercase mb-1">Dani Sam</h1>
+      <!-- Masthead Heading-->
+      <h1 class="masthead-heading text-uppercase mb-1">Dani Sam</h1>
 
-    <!-- Icon Divider-->
-    <div class="divider-custom divider-light">
-      <div class="divider-custom-line"></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-      <div class="divider-custom-line"></div>
+      <!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading-->
+      <p class="masthead-subheading font-weight-light mb-3 hero-subtitle">
+        Aspiring Infrastructure Engineer | Distributed Systems Learner
+      </p>
+
+      <!-- Quote box -->
+      <div class="hero-quote-box">
+        <h6 id="quotes" class="mb-1">
+          “All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents.”
+        </h6>
+        <footer id="quotes-name" class="mb-0">— Dr. APJ Abdul Kalam</footer>
+      </div>
     </div>
-
-    <!-- Masthead Subheading-->
-    <p class="masthead-subheading font-weight-light mb-3 hero-subtitle">
-      Aspiring Infrastructure Engineer | Distributed Systems Learner
-    </p>
-
-    <!-- Quote box -->
-    <div class="hero-quote-box">
-      <h6 id="quotes" class="mb-1">
-        “All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents.”
-      </h6>
-      <footer id="quotes-name" class="mb-0">— Dr. APJ Abdul Kalam</footer>
-    </div>
-  </div>
-</header>
+  </header>
 
   <!-- Portfolio Section-->
   <section class="page-section portfolio" id="portfolio">
@@ -111,7 +114,9 @@
               <div class="icon-box">
                 <div class="icon"><i class="bx bx-wrench"></i></div>
                 <h4><a href="">Infrastructure & Systems Dev</a></h4>
-                <p>I design and build backend and infrastructure components focused on networking, concurrency, and distributed systems. My work centers on Linux-based environments, reliability, and performance-aware system design.</p>
+                <p>I design and build backend and infrastructure components focused on networking, concurrency, and
+                  distributed systems. My work centers on Linux-based environments, reliability, and performance-aware
+                  system design.</p>
               </div>
             </div>
 
@@ -146,6 +151,55 @@
   </div>
   </div>
   </section>
+  <!-- ======= Projects Section ======= -->
+  <section class="page-section bg-secondary" id="projects">
+    <div class="container">
+
+      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projects</h2>
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="row justify-content-center g-4">
+
+        <!-- Featured: Distributed Queue System -->
+        <div class="col-lg-8 col-md-10">
+          <div class="project-card featured reveal-on-scroll">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="bx bx-git-branch"></i></div>
+              <div>
+                <span class="project-status in-progress">⬤ In Progress</span>
+                <span class="project-type">Cloud Computing Case Study</span>
+              </div>
+            </div>
+            <h3 class="project-title">Distributed Queue System</h3>
+            <p class="project-desc">
+              Designing and implementing a distributed task queue from scratch — covering queue architecture,
+              worker coordination, fault tolerance, and observability. Research grounded in distributed systems
+              literature with a focus on real-world reliability patterns.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Go</span>
+              <span class="project-tag">Distributed Systems</span>
+              <span class="project-tag">Concurrency</span>
+              <span class="project-tag">TCP/IP</span>
+              <span class="project-tag">Observability</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/voidhyr" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
   <!-- About Section-->
   <section class="page-section  text-white mb-0" id="about" style="background-color: #1abc9c">
     <div class="container">
@@ -156,67 +210,69 @@
       <section id="about" class="about">
 
         <!-- ======= About Me ======= -->
-<div class="about-me container">
+        <div class="about-me container">
 
-  <div class="section-title">
-    <h2>About</h2>
-    <p>Learn more about me</p>
-  </div>
+          <div class="section-title">
+            <h2>About</h2>
+            <p>Learn more about me</p>
+          </div>
 
-  <div class="row reveal-on-scroll">
-    <div class="col-lg-4">
-      <img src="assets/img/photo046.jpg" class="img-fluid about-photo" alt="">
-    </div>
+          <div class="row reveal-on-scroll">
+            <div class="col-lg-4">
+              <img src="assets/img/photo046.jpg" class="img-fluid about-photo" alt="">
+            </div>
 
-    <div class="col-lg-8 pt-4 pt-lg-0 content about-right-panel">
+            <div class="col-lg-8 pt-4 pt-lg-0 content about-right-panel">
 
-      <p class="fst-italic mb-2">
-        I'm <span class="about-name">Dani Sam</span>
-      </p>
-      <p class="about-tagline">
-         MSc Computer Science student and aspiring Infrastructure Engineer focused on 
-        networking internals, distributed systems, and Go-based backend engineering. 
-        I build things from scratch to understand how they work — currently researching 
-        distributed queue architecture for my Cloud Computing coursework.
-      </p>
+              <p class="fst-italic mb-2">
+                I'm <span class="about-name">Dani Sam</span>
+              </p>
+              <p class="about-tagline">
+                MSc Computer Science student and aspiring Infrastructure Engineer focused on
+                networking internals, distributed systems, and Go-based backend engineering.
+                I build things from scratch to understand how they work — currently researching
+                distributed queue architecture for my Cloud Computing coursework.
+              </p>
 
-      <!-- Freelance badge -->
-      <div class="freelance-badge mb-3">
-        <span class="dot"></span>
-        Open to internships, research collaboration & freelance
-      </div>
+              <!-- Freelance badge -->
+              <div class="freelance-badge mb-3">
+                <span class="dot"></span>
+                Open to internships, research collaboration & freelance
+              </div>
 
-      <div class="row mt-2">
-        <div class="col-lg-6">
-          <ul class="about-list">
-            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BCA · MSc CS (Pursuing)</span></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Kerala, India</span></li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <ul class="about-list">
-            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>danisam244@gmail.com</span></li>
-            <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-          </ul>
-        </div>
-      </div>
+              <div class="row mt-2">
+                <div class="col-lg-6">
+                  <ul class="about-list">
+                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BCA · MSc CS
+                        (Pursuing)</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Kerala, India</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="about-list">
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>danisam244@gmail.com</span>
+                    </li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  </ul>
+                </div>
+              </div>
 
-      <!-- Tech pills instead of plain list -->
-      <div class="mt-4">
-        <h6 class="mb-2">Languages & tools I use</h6>
-        <div class="tech-pills">
-          <span class="tech-pill">Go</span>
-          <span class="tech-pill">C</span>
-          <span class="tech-pill">Linux</span>
-          <span class="tech-pill">TCP/IP</span>
-          <span class="tech-pill">Git</span>
-        </div>
-      </div>
+              <!-- Tech pills instead of plain list -->
+              <div class="mt-4">
+                <h6 class="mb-2">Languages & tools I use</h6>
+                <div class="tech-pills">
+                  <span class="tech-pill">Go</span>
+                  <span class="tech-pill">C</span>
+                  <span class="tech-pill">Linux</span>
+                  <span class="tech-pill">TCP/IP</span>
+                  <span class="tech-pill">Git</span>
+                </div>
+              </div>
 
-    </div>
-  </div>
+            </div>
+          </div>
 
-</div><!-- End About Me -->
+        </div><!-- End About Me -->
 
 
 
@@ -306,88 +362,88 @@
 
         </div><!-- End Skills -->
 
-       <!-- ======= Interests ======= -->
-<div class="interests container">
+        <!-- ======= Interests ======= -->
+        <div class="interests container">
 
-  <div class="section-title">
-    <h2>Interests</h2>
-  </div>
+          <div class="section-title">
+            <h2>Interests</h2>
+          </div>
 
-  <div class="row">
+          <div class="row">
 
-    <div class="col-lg-3 col-md-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-store-line" style="color: #ffbb2c;"></i>
-        <h3>CODING</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                <h3>CODING</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-        <h3>RESEARCH</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                <h3>RESEARCH</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-        <h3>READING</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                <h3>READING</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-        <h3>CRICKET</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                <h3>CRICKET</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-database-2-line" style="color: #47aeff;"></i>
-        <h3>BADMINTON</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                <h3>BADMINTON</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-        <h3>GAMING</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                <h3>GAMING</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-        <h3>AUTOMOBILE ARTICLES</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+                <h3>AUTOMOBILE ARTICLES</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-        <h3>VIDEO EDITING</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+                <h3>VIDEO EDITING</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-        <h3>TRAVELLING</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+                <h3>TRAVELLING</h3>
+              </div>
+            </div>
 
-    <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box interest-card reveal-on-scroll">
-        <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-        <h3>MUSIC</h3>
-      </div>
-    </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box interest-card reveal-on-scroll">
+                <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+                <h3>MUSIC</h3>
+              </div>
+            </div>
 
-  </div>
+          </div>
 
-</div><!-- End Interests -->
+        </div><!-- End Interests -->
 
 
 
