@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', event => {
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#mainNav',
-            offset: 200,
+            offset: 350,
         });
     };
 
@@ -109,6 +109,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.25 });
 
     revealElems.forEach(el => observer.observe(el));
+});
+
+// ======= Work Tabs =======
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".work-tab");
+  const panels = document.querySelectorAll(".work-panel");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      panels.forEach(p => p.classList.remove("active"));
+      tab.classList.add("active");
+      document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
+    });
+  });
+
+  // Show more projects
+  const showMoreBtn = document.getElementById("showMoreProjects");
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener("click", () => {
+      document.querySelectorAll(".hidden-item").forEach(el => {
+        el.classList.remove("hidden-item");
+      });
+      showMoreBtn.style.display = "none";
+    });
+  }
 });
 
 
