@@ -44,7 +44,7 @@
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Services</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Work</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
@@ -151,21 +151,28 @@
   </div>
   </div>
   </section>
-  <!-- ======= Projects Section ======= -->
-  <section class="page-section bg-secondary" id="projects">
-    <div class="container">
+ <!-- ======= Projects & Writing Section ======= -->
+<section class="page-section bg-secondary" id="projects">
+  <div class="container">
 
-      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projects</h2>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
+    <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Work</h2>
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+      <div class="divider-custom-line"></div>
+    </div>
 
+    <!-- Tabs -->
+    <div class="work-tabs">
+      <button class="work-tab active" data-tab="projects">Projects</button>
+      <button class="work-tab" data-tab="articles">Articles</button>
+    </div>
+
+    <!-- Projects Tab -->
+    <div class="work-panel active" id="tab-projects">
       <div class="row justify-content-center g-4">
 
-        <!-- Featured: Distributed Queue System -->
-        <div class="col-lg-8 col-md-10">
+        <div class="col-lg-8 col-md-10 project-item">
           <div class="project-card featured reveal-on-scroll">
             <div class="project-card-header">
               <div class="project-icon"><i class="bx bx-git-branch"></i></div>
@@ -176,9 +183,9 @@
             </div>
             <h3 class="project-title">Distributed Queue System</h3>
             <p class="project-desc">
-              Designing and implementing a distributed task queue from scratch — covering queue architecture,
-              worker coordination, fault tolerance, and observability. Research grounded in distributed systems
-              literature with a focus on real-world reliability patterns.
+              Designing and implementing a distributed task queue from scratch — covering queue
+              architecture, worker coordination, fault tolerance, and observability. Research grounded in
+              distributed systems literature with a focus on real-world reliability patterns.
             </p>
             <div class="project-tags">
               <span class="project-tag">Go</span>
@@ -195,10 +202,55 @@
           </div>
         </div>
 
+        <!-- When you have more than 3 projects, add class="project-item hidden-item" to extra cards -->
+        <!-- Then uncomment the Show More button below -->
+        <!--
+        <div class="text-center mt-4">
+          <button class="btn-show-more" id="showMoreProjects">Show More</button>
+        </div>
+        -->
+
       </div>
     </div>
-  </section>
-  <!-- End Projects Section -->
+
+    <!-- Articles Tab -->
+    <div class="work-panel" id="tab-articles">
+      <div class="row justify-content-center g-4">
+
+        <div class="col-lg-8 col-md-10">
+          <div class="project-card reveal-on-scroll">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="bx bx-pen"></i></div>
+              <div>
+                <span class="project-status article">⬤ Published</span>
+                <span class="project-type">Medium · Nov 2025 · 2 min read</span>
+              </div>
+            </div>
+            <h3 class="project-title">The Architects and the Tenants</h3>
+            <p class="project-desc">
+              AI can write code — but it can't replace system-level thinking. Why low-level computing
+              skills in systems, memory, concurrency, and networking will matter most in the age of AI.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Systems Thinking</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Low-Level Computing</span>
+              <span class="project-tag">Software Engineering</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://medium.com/p/477a3ad6e064" target="_blank" class="project-link">
+                <i class="fab fa-medium"></i> Read on Medium
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Work Section -->
 
   <!-- About Section-->
   <section class="page-section  text-white mb-0" id="about" style="background-color: #1abc9c">
