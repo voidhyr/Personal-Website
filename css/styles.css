@@ -12257,3 +12257,72 @@ html {
 .project-link:hover {
   color: #1abc9c;
 }
+
+/* ======= Work Tabs ======= */
+.work-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.work-tab {
+  background: transparent;
+  border: 1px solid rgba(26, 188, 156, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px 28px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.work-tab:hover {
+  border-color: #1abc9c;
+  color: #1abc9c;
+}
+
+.work-tab.active {
+  background: #1abc9c;
+  border-color: #1abc9c;
+  color: #fff;
+}
+
+.work-panel {
+  display: none;
+}
+
+.work-panel.active {
+  display: block;
+}
+
+.btn-show-more {
+  background: transparent;
+  border: 1px solid rgba(26, 188, 156, 0.4);
+  color: #1abc9c;
+  padding: 8px 32px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-show-more:hover {
+  background: #1abc9c;
+  color: #fff;
+}
+
+.hidden-item {
+  display: none;
+}
+
+.project-status.article {
+  background: rgba(91, 141, 255, 0.15);
+  color: #7aa2ff;
+  border: 1px solid rgba(91, 141, 255, 0.4);
+}
