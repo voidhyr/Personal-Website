@@ -11,10 +11,9 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -53,7 +52,7 @@ function animateSkillPercentages() {
     document.querySelectorAll(".val").forEach(val => {
         let target = Number(val.dataset.target) || 0;
         let current = 0;
-        let speed = target / 120;   // lower = slower count
+        let speed = target / 120;
 
         let counter = setInterval(() => {
             current += speed;
@@ -66,75 +65,66 @@ function animateSkillPercentages() {
     });
 }
 
-// Animate bars when section becomes visible
+// ===================================================================== //
+// SINGLE DOMContentLoaded — skill bars, scroll reveal, tabs, show more
+// ===================================================================== //
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Skill bar animation
     const bars = document.querySelectorAll(".progress-bar");
     const skillSection = document.querySelector(".skills");
-    if (!skillSection || bars.length === 0) return;
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-
-            // 🔥 Staggered bar animation
-            bars.forEach((bar, i) => {
-                let width = bar.dataset.progress + "%";
-                setTimeout(() => {
-                    bar.classList.add("is-animating");  // <-- activates glow/gradient
-                    bar.style.width = width;
-                }, i * 300); // Delay: 0ms, 300ms, 600ms...
+    if (skillSection && bars.length > 0) {
+        const skillObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                bars.forEach((bar, i) => {
+                    setTimeout(() => {
+                        bar.classList.add("is-animating");
+                        bar.style.width = bar.dataset.progress + "%";
+                    }, i * 300);
+                });
+                setTimeout(animateSkillPercentages, 200);
+                skillObserver.disconnect();
             });
+        }, { threshold: 0.35 });
+        skillObserver.observe(skillSection);
+    }
 
-            // 🔥 delayed number count sync
-            setTimeout(animateSkillPercentages, 200);
-
-            observer.disconnect(); // only run once
-        });
-    }, { threshold: 0.35 });
-
-    observer.observe(skillSection);
-});
-// Scroll reveal for .reveal-on-scroll elements
-document.addEventListener("DOMContentLoaded", () => {
+    // Scroll reveal
     const revealElems = document.querySelectorAll(".reveal-on-scroll");
-    if (revealElems.length === 0) return;
+    if (revealElems.length > 0) {
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.25 });
+        revealElems.forEach(el => revealObserver.observe(el));
+    }
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-                observer.unobserve(entry.target);
-            }
+    // Work tabs
+    const tabs = document.querySelectorAll(".work-tab");
+    const panels = document.querySelectorAll(".work-panel");
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            panels.forEach(p => p.classList.remove("active"));
+            tab.classList.add("active");
+            document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
         });
-    }, { threshold: 0.25 });
-
-    revealElems.forEach(el => observer.observe(el));
-});
-
-// ======= Work Tabs =======
-document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".work-tab");
-  const panels = document.querySelectorAll(".work-panel");
-
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
-      panels.forEach(p => p.classList.remove("active"));
-      tab.classList.add("active");
-      document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
     });
-  });
 
-  // Show more projects
-  const showMoreBtn = document.getElementById("showMoreProjects");
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener("click", () => {
-      document.querySelectorAll(".hidden-item").forEach(el => {
-        el.classList.remove("hidden-item");
-      });
-      showMoreBtn.style.display = "none";
-    });
-  }
+    // Show more projects
+    const showMoreBtn = document.getElementById("showMoreProjects");
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener("click", () => {
+            document.querySelectorAll(".hidden-item").forEach(el => {
+                el.classList.remove("hidden-item");
+            });
+            showMoreBtn.style.display = "none";
+        });
+    }
+
 });
-
-
