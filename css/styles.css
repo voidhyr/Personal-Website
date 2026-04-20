@@ -5247,7 +5247,8 @@ fieldset:disabled .btn {
 
 
   width: 0%;
-  transition: width 6s ease; /* super slow fill */
+  transition: width 6s ease;
+  /* super slow fill */
 }
 
 /* When JS adds this class → animate gradient + glow */
@@ -5260,10 +5261,12 @@ fieldset:disabled .btn {
     background-position: 0% 50%;
     box-shadow: 0 0 4px rgba(34, 197, 94, 0.4);
   }
+
   50% {
     background-position: 100% 50%;
     box-shadow: 0 0 14px rgba(34, 197, 94, 0.9);
   }
+
   100% {
     background-position: 0% 50%;
     box-shadow: 0 0 4px rgba(34, 197, 94, 0.4);
@@ -11923,8 +11926,10 @@ html {
 
 /* Profile photo card styling */
 .about-photo {
-  border-radius: 1rem;                /* Rounded image corners */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);   /* Soft shadow for depth */
+  border-radius: 1rem;
+  /* Rounded image corners */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  /* Soft shadow for depth */
 }
 
 /* Right-side text container */
@@ -11961,7 +11966,8 @@ html {
   align-items: center;
   gap: 0.4rem;
   padding: 0.25rem 0.8rem;
-  border-radius: 999px;               /* Fully rounded pill shape */
+  border-radius: 999px;
+  /* Fully rounded pill shape */
   background: rgba(0, 0, 0, 0.18);
   font-size: 0.75rem;
   letter-spacing: 0.06em;
@@ -11973,7 +11979,8 @@ html {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #22c55e;               /* Active online / available color */
+  background: #22c55e;
+  /* Active online / available color */
   box-shadow: 0 0 8px rgba(34, 197, 94, 0.9);
 }
 
@@ -11992,19 +11999,22 @@ html {
 /* Individual skill tag pill */
 .tech-pill {
   padding: 0.25rem 0.7rem;
-  border-radius: 999px;               /* Capsule shape */
+  border-radius: 999px;
+  /* Capsule shape */
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   transition: transform 0.18s ease, box-shadow 0.18s ease,
-              background-color 0.18s ease, border-color 0.18s ease;
+    background-color 0.18s ease, border-color 0.18s ease;
 }
 
 /* Hover animation */
 .tech-pill:hover {
-  transform: translateY(-2px) scale(1.03);       /* Lift up slightly */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);      /* Depth when hovered */
+  transform: translateY(-2px) scale(1.03);
+  /* Lift up slightly */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  /* Depth when hovered */
   background-color: rgba(0, 0, 0, 0.18);
   border-color: #fff;
 }
@@ -12017,7 +12027,8 @@ html {
 /* Hidden initial state */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(30px);        /* Slide up when revealed */
+  transform: translateY(30px);
+  /* Slide up when revealed */
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
@@ -12026,22 +12037,23 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* INTERESTS SECTION HOVER + MOTION */
 
 .interest-card {
   padding: 20px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  transition: 
-    transform .3s ease, 
-    box-shadow .3s ease, 
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
     background .3s ease;
 }
 
 .interest-card:hover {
   transform: translateY(-10px) scale(1.05);
-  background: rgba(255,255,255,0.12);
-  box-shadow: 0 14px 30px rgba(0,0,0,.25);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, .25);
 }
 
 /* Title inside box */
@@ -12070,25 +12082,29 @@ html {
 ====================================================== */
 
 .masthead {
-  background: #18C4A6 !important;      /* YOUR SELECTED COLOR */
-  padding-top: calc(6rem + 74px);       /* Space for navbar */
+  background: #18C4A6 !important;
+  /* YOUR SELECTED COLOR */
+  padding-top: calc(6rem + 74px);
+  /* Space for navbar */
   padding-bottom: 6rem;
   text-align: center;
-  animation: heroFadeUp .9s ease-out both; /* Fade-up on load */
+  animation: heroFadeUp .9s ease-out both;
+  /* Fade-up on load */
 }
 
 /* Avatar Image — Soft, Clean, Focused */
 .masthead .masthead-avatar {
   width: 15rem;
-  border-radius: 1rem;                  /* Smooth rounded frame */
-  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  border-radius: 1rem;
+  /* Smooth rounded frame */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
   transition: transform .35s ease, box-shadow .35s ease;
 }
 
 /* Hover Boost — subtle professional motion */
 .masthead .masthead-avatar:hover {
   transform: scale(1.035);
-  box-shadow: 0 16px 40px rgba(0,0,0,.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .35);
 }
 
 /* NAME — Bold and centered */
@@ -12114,10 +12130,12 @@ html {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }
+
   .masthead .masthead-heading {
     font-size: 4rem;
     line-height: 3.5rem;
   }
+
   .masthead .masthead-subheading {
     font-size: 1.5rem;
   }
@@ -12132,8 +12150,8 @@ html {
   letter-spacing: .14em;
   text-transform: uppercase;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.55);
-  background: rgba(0,0,0,.14);
+  border: 1px solid rgba(255, 255, 255, .55);
+  background: rgba(0, 0, 0, .14);
 }
 
 /* Quote card styling */
@@ -12142,18 +12160,33 @@ html {
   padding: .7rem 1.2rem;
   max-width: 640px;
   margin-inline: auto;
-  background: rgba(0,0,0,.14);
+  background: rgba(0, 0, 0, .14);
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(255, 255, 255, .18);
 }
 
-#quotes { font-size: .9rem; opacity: .95; margin-bottom: .3rem; }
-#quotes-name { font-size: .78rem; opacity: .85; }
+#quotes {
+  font-size: .9rem;
+  opacity: .95;
+  margin-bottom: .3rem;
+}
+
+#quotes-name {
+  font-size: .78rem;
+  opacity: .85;
+}
 
 /* Fade-up animation */
 @keyframes heroFadeUp {
-  from { opacity: 0; transform: translateY(15px); }
-  to   { opacity: 1; transform: translateY(0);   }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -12325,4 +12358,22 @@ html {
   background: rgba(91, 141, 255, 0.15);
   color: #7aa2ff;
   border: 1px solid rgba(91, 141, 255, 0.4);
+}
+
+/* ======================================================
+   FOOTER SOCIAL ICONS — single row, no wrapping
+====================================================== */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.45rem;
+}
+
+.footer-social .btn-social {
+  width: 2.7rem;
+  height: 2.7rem;
+  font-size: 1.05rem;
+  flex-shrink: 0;
 }
