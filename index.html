@@ -161,101 +161,74 @@
   <!-- ======= Projects & Writing Section ======= -->
   <section class="page-section bg-secondary" id="projects">
     <div class="container">
-
+ 
       <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Work</h2>
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
         <div class="divider-custom-line"></div>
       </div>
-
+ 
       <!-- Tabs -->
       <div class="work-tabs">
         <button class="work-tab active" data-tab="projects">Projects</button>
         <button class="work-tab" data-tab="articles">Articles</button>
       </div>
-
+ 
       <!-- Projects Tab -->
       <div class="work-panel active" id="tab-projects">
-        <div class="row justify-content-center g-4">
-
-          <div class="col-lg-8 col-md-10 project-item">
-            <div class="project-card featured reveal-on-scroll">
-              <div class="project-card-header">
-                <div class="project-icon"><i class="bx bx-git-branch"></i></div>
-                <div>
-                  <span class="project-status in-progress">⬤ Completed</span>
-                  <span class="project-type">Case Study · Infrastructure</span>
-                </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="article-list reveal-on-scroll">
+ 
+              <!-- Project 1 -->
+              <div class="article-item">
+                <span class="article-date">Completed · Case Study · Infrastructure</span>
+                <a href="https://github.com/voidhyr/go-load-balancer" target="_blank" rel="noopener noreferrer" class="article-title">HTTP Load Balancer</a>
+                <p class="article-desc">Building an L7 HTTP load balancer in Go from scratch — covering round-robin and least-connections algorithms, health checks, and backend pool management. Architecture grounded in AWS ELB, NGINX, and HAProxy with a focus on cloud infrastructure and IaaS scalability patterns.</p>
+                <span class="article-meta"><i class="fa-brands fa-github"></i> GitHub · Go · Networking · TCP/IP · Infrastructure</span>
               </div>
-              <h3 class="project-title">HTTP Load Balancer</h3>
-              <p class="project-desc">
-                Building an L7 HTTP load balancer in Go from scratch — covering round-robin
-                and least-connections algorithms, health checks, and backend pool management.
-                Architecture grounded in AWS ELB, NGINX, and HAProxy with a focus on
-                cloud infrastructure and IaaS scalability patterns.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Go</span>
-                <span class="project-tag">Networking</span>
-                <span class="project-tag">TCP/IP</span>
-                <span class="project-tag">HTTP</span>
-                <span class="project-tag">Infrastructure</span>
-              </div>
-              <div class="project-footer">
-                <a href="https://github.com/voidhyr/go-load-balancer" target="_blank" class="project-link">
-                  <i class="fa-brands fa-github"></i> View on GitHub
-                </a>
-              </div>
+ 
             </div>
           </div>
-
-          <!-- When you have more than 3 projects, add class="project-item hidden-item" to extra cards -->
-          <!-- Then uncomment the Show More button below -->
-          <!--
-        <div class="text-center mt-4">
-          <button class="btn-show-more" id="showMoreProjects">Show More</button>
-        </div>
-        -->
-
         </div>
       </div>
-
+ 
       <!-- Articles Tab -->
       <div class="work-panel" id="tab-articles">
-        <div class="row justify-content-center g-4">
-
+        <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10">
-            <div class="project-card reveal-on-scroll">
-              <div class="project-card-header">
-                <div class="project-icon"><i class="bx bx-pen"></i></div>
-                <div>
-                  <span class="project-status article">⬤ Published</span>
-                  <span class="project-type">Medium · Nov 2025 · 2 min read</span>
-                </div>
+            <div class="article-list reveal-on-scroll">
+ 
+              <!-- Article 1 -->
+              <div class="article-item">
+                <span class="article-date">20 April 2026</span>
+                <a href="https://dev.to/voidhyr/my-load-balancer-worked-thats-what-made-me-uncomfortable-17gm" target="_blank" rel="noopener noreferrer" class="article-title">My load balancer worked. That's what made me uncomfortable.</a>
+                <p class="article-desc">Building the load balancer was the easy part. Understanding why it worked — and what that revealed about how little I actually knew — was a different story entirely.</p>
+                <span class="article-meta"><i class="fa-brands fa-dev"></i> dev.to · 2 min read</span>
               </div>
-              <h3 class="project-title">The Architects and the Tenants</h3>
-              <p class="project-desc">
-                AI can write code — but it can't replace system-level thinking. Why low-level computing
-                skills in systems, memory, concurrency, and networking will matter most in the age of AI.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Systems Thinking</span>
-                <span class="project-tag">AI</span>
-                <span class="project-tag">Low-Level Computing</span>
-                <span class="project-tag">Software Engineering</span>
+ 
+              <!-- Article 2 -->
+              <div class="article-item">
+                <span class="article-date">19 April 2026</span>
+                <a href="https://dev.to/voidhyr/the-architects-and-the-tenants-your-place-in-the-ai-driven-future-of-code-37lp" target="_blank" rel="noopener noreferrer" class="article-title">The Architects and the Tenants: Your Place in the AI-Driven Future of Code</a>
+                <p class="article-desc">AI can write code — but it can't replace system-level thinking. Why skills in systems, memory, concurrency, and networking will matter most in the age of AI.</p>
+                <span class="article-meta"><i class="fa-brands fa-dev"></i> dev.to · 2 min read</span>
               </div>
-              <div class="project-footer">
-                <a href="https://medium.com/p/477a3ad6e064" target="_blank" class="project-link">
-                  <i class="fab fa-medium"></i> Read on Medium
-                </a>
+ 
+              <!-- Article 3 -->
+              <div class="article-item">
+                <span class="article-date">Nov 2025</span>
+                <a href="https://medium.com/p/477a3ad6e064" target="_blank" rel="noopener noreferrer" class="article-title">The Architects and the Tenants</a>
+                <p class="article-desc">AI can write code — but it can't replace system-level thinking. Why low-level computing skills in systems, memory, concurrency, and networking will matter most in the age of AI.</p>
+                <span class="article-meta"><i class="fab fa-medium"></i> Medium · 2 min read</span>
               </div>
+ 
             </div>
           </div>
-
         </div>
       </div>
-
+ 
     </div>
   </section>
   <!-- End Work Section -->
