@@ -12330,6 +12330,7 @@ html {
 
 .work-panel.active {
   display: block;
+  min-height: 420px;
 }
 
 .btn-show-more {
@@ -12376,4 +12377,61 @@ html {
   height: 2.7rem;
   font-size: 1.05rem;
   flex-shrink: 0;
+}
+
+/* ======================================================
+   ARTICLE LIST — blog-style layout
+====================================================== */
+.article-list {
+  padding: 0.5rem 0;
+}
+
+.article-item {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-item:last-child {
+  border-bottom: none;
+}
+
+.article-date {
+  display: block;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.03em;
+}
+
+.article-title {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1abc9c;
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 0.55rem;
+  transition: color 0.2s ease;
+}
+
+.article-title:hover {
+  color: #14a085;
+  text-decoration: underline;
+}
+
+.article-desc {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.65;
+  margin-bottom: 0.6rem;
+}
+
+.article-meta {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.03em;
+}
+
+.article-meta i {
+  margin-right: 0.3rem;
 }

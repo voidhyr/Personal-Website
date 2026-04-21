@@ -19,14 +19,24 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 350,
+    // Custom IntersectionObserver nav highlighter — replaces Bootstrap ScrollSpy
+    // ScrollSpy breaks when tab content changes section height; this watches sections directly
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('#navbarResponsive .nav-link');
+
+    const navObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                const active = document.querySelector(`#navbarResponsive .nav-link[href="#${entry.target.id}"]`);
+                if (active) active.classList.add('active');
+            }
         });
-    };
+    }, {
+        rootMargin: '-40% 0px -55% 0px'
+    });
+
+    sections.forEach(section => navObserver.observe(section));
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -112,7 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
             tabs.forEach(t => t.classList.remove("active"));
             panels.forEach(p => p.classList.remove("active"));
             tab.classList.add("active");
-            document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
+            const activePanel = document.getElementById("tab-" + tab.dataset.tab);
+            activePanel.classList.add("active");
+
+            // Trigger reveal-on-scroll for elements inside the newly shown tab
+            activePanel.querySelectorAll(".reveal-on-scroll").forEach(el => {
+                el.classList.add("is-visible");
+            });
         });
     });
 
@@ -128,3 +144,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+    
