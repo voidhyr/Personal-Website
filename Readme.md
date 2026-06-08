@@ -81,6 +81,12 @@ python3 -m http.server 8000
 
 ---
 
+## License
+
+This project is open source and available under the [MIT License](LICENSE) — feel free to use it as inspiration for your own portfolio or fork it to build upon.
+
+---
+
 ## Connect
 
 | Platform | Link |
