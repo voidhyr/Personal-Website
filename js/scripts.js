@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(animateSkillPercentages, 200);
                 skillObserver.disconnect();
             });
-        }, { threshold: 0.35 });
+        }, { threshold: 0.1 });
         skillObserver.observe(skillSection);
     }
 
@@ -144,4 +144,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
-    
