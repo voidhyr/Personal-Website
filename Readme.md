@@ -1,7 +1,7 @@
 # voidhyr.github.io — Personal Portfolio
 
-> Network Automation Engineer in training. MSc CS student, Kerala, India.  
-> Building in public — silicon to protocol.
+> DevOps & Automation Engineer in training. MSc CS student, Kerala, India.
+> Building in public — scripts to systems.
 
 Live site → **[voidhyr.github.io/Personal-Website](https://voidhyr.github.io/Personal-Website)**
 
@@ -10,7 +10,7 @@ Live site → **[voidhyr.github.io/Personal-Website](https://voidhyr.github.io/P
 ## About
 
 Personal portfolio site for **Dani Sam (voidhyr)** — a systems-focused engineer
-transitioning from BCA into Network Automation Engineering. The site covers
+transitioning from BCA into DevOps & Automation Engineering. The site covers
 projects, writing, skills, and contact.
 
 ---
@@ -76,6 +76,7 @@ python3 -m http.server 8000
 
 | Version | Description |
 |---|---|
+| v1.5.0 | Rebrand — DevOps and automation engineering focus |
 | v1.4.0 | Migrated to Bootstrap 5.3.8 CDN, extracted custom.css, removed vendor folder |
 | v1.3.0 | Rebrand — network automation engineering focus |
 
