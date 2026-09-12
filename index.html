@@ -2,578 +2,781 @@
      https://startbootstrap.com/theme/freelancer
      Heavily customized by Dani Sam (voidhyr) -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Voidhyr | Aspiring Software Engineer</title>
+    <meta
+      name="description"
+      content="Dani Sam (Voidhyr), aspiring software engineer building projects with Python and SQL. Interested in data systems, AI, and independent experimentation. "
+    />
+    <meta name="author" content="voidhyr" />
+    <meta
+      name="keywords"
+      content="voidhyr, Dani Sam, software engineering, Python, SQL, Linux, data engineering, AI, portfolio"
+    />
+    <meta property="og:title" content="Voidhyr | Aspiring Software Engineer" />
+    <meta
+      property="og:description"
+      content="Building projects with Python and SQL. Exploring software development, data systems, AI, and independent experimentation."
+    />
+    <meta
+      property="og:url"
+      content="https://voidhyr.github.io/Personal-Website/"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://voidhyr.github.io/Personal-Website/assets/img/og-image.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      name="google-site-verification"
+      content="bEfQleCz3trCcUBOsTVQSqIt83HhWcmctcGuBxjIdsc"
+    />
+    <link rel="canonical" href="https://voidhyr.github.io/Personal-Website/" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/jpeg" href="assets/img/avatarphoto.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://kit.fontawesome.com/bcc08c6e92.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Voidhyr | Aspiring Software Engineer</title>
-  <meta name="description"
-    content="Dani Sam (Voidhyr), aspiring software engineer building projects with Python and SQL. Interested in data systems, AI, and independent experimentation. " />
-  <meta name="author" content="voidhyr" />
-  <meta name="keywords"
-    content="voidhyr, Dani Sam, software engineering, Python, SQL, Linux, data engineering, AI, portfolio" />
-  <meta property="og:title" content="Voidhyr | Aspiring Software Engineer" />
-  <meta property="og:description"
-    content="Building projects with Python and SQL. Exploring software development, data systems, AI, and independent experimentation." />
-  <meta property="og:url" content="https://voidhyr.github.io/Personal-Website/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://voidhyr.github.io/Personal-Website/assets/img/og-image.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="google-site-verification" content="bEfQleCz3trCcUBOsTVQSqIt83HhWcmctcGuBxjIdsc" />
-  <link rel="canonical" href="https://voidhyr.github.io/Personal-Website/" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Favicon-->
-  <link rel="icon" type="image/jpeg" href="assets/img/avatarphoto.jpg" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://kit.fontawesome.com/bcc08c6e92.js" crossorigin="anonymous" defer></script>
-  <!-- Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap"
-    rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS — load last so it overrides Bootstrap -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dani Sam",
+        "url": "https://voidhyr.github.io/Personal-Website/",
+        "jobTitle": "Aspiring Software Engineer",
+        "description": "Aspiring software engineer building projects with Python and SQL. Interested in data systems, AI, and independent experimentation.",
+        "sameAs": [
+          "https://github.com/voidhyr",
+          "https://dev.to/voidhyr",
+          "https://medium.com/@voidhyr",
+          "https://x.com/voidhyr",
+          "https://www.instagram.com/ds_for_danisam/"
+        ],
+        "email": "danisam244@gmail.com"
+      }
+    </script>
+  </head>
 
-  <!-- Custom CSS — load last so it overrides Bootstrap -->
-  <link href="css/custom.css" rel="stylesheet" />
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dani Sam",
-    "url": "https://voidhyr.github.io/Personal-Website/",
-   "jobTitle": "Aspiring Software Engineer",
-   "description": "Aspiring software engineer building projects with Python and SQL. Interested in data systems, AI, and independent experimentation.",
-    "sameAs": [
-      "https://github.com/voidhyr",
-      "https://dev.to/voidhyr",
-      "https://medium.com/@voidhyr",
-      "https://x.com/voidhyr",
-      "https://www.instagram.com/ds_for_danisam/"
-    ],
-    "email": "danisam244@gmail.com"
-  }
-  </script>
-</head>
-
-<body id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">Dani Sam</a>
-      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Services</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Work</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Masthead-->
-  <header class="masthead text-white text-center hero-masthead">
-    <div class="container d-flex align-items-center flex-column hero-content">
-      <!-- Masthead Avatar Image-->
-      <img class="masthead-avatar mb-4 about-photo" src="assets/img/photo046.webp" alt="Portrait of Dani Sam"
-        loading="eager" decoding="async" fetchpriority="high" />
-
-      <!-- Small role badge -->
-      <span class="hero-badge mb-2">PYTHON • SQL • AIRFLOW • LINUX</span>
-
-      <!-- Masthead Heading-->
-      <h1 class="masthead-heading text-uppercase mb-1">Dani Sam</h1>
-
-      <!-- Icon Divider-->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <p class="masthead-subheading font-weight-light mb-3 hero-subtitle">
-        Aspiring Data Engineer | Python · SQL · Airflow · Linux
-      </p>
-
-      <!-- Quote box -->
-      <div class="hero-quote-box">
-        <h6 id="quotes" class="mb-1">
-          "All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents."
-        </h6>
-        <footer id="quotes-name" class="mb-0">— Dr. APJ Abdul Kalam</footer>
-      </div>
-    </div>
-  </header>
-
-  <!-- Portfolio Section-->
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
-      <!-- Portfolio Section Heading-->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Services</h2>
-      <!-- Icon Divider-->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services bg-secondary">
-        <div class="container pb-4">
-          <div class="section-title"><br></div>
-          <div class="row justify-content-center g-4">
-
-            <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
-              <div class="service-card reveal-on-scroll">
-                <div class="service-icon"><i class="bx bx-chip"></i></div>
-                <h4>Data Engineering & Python</h4>
-                <p>Building ETL/ELT pipelines and data workflows using Python — SQL-based
-                data modeling, workflow orchestration with Airflow,
-                and containerized pipeline environments.
-                Move data reliably. Understand the system underneath.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
-              <div class="service-card reveal-on-scroll">
-                <div class="service-icon"><i class="bx bx-wrench"></i></div>
-                <h4>Systems Setup & Support</h4>
-                <p>OS installation and configuration, Linux setup, software
-                  troubleshooting, VM environments, and general computer support —
-                  getting systems running clean from the ground up.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-
-
-    </div>
-  </section>
-  <!-- ======= Projects & Writing Section ======= -->
-  <section class="page-section bg-secondary" id="projects">
-    <div class="container">
-
-      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Work</h2>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Tabs -->
-      <div class="work-tabs">
-        <button class="work-tab active" data-tab="projects">Projects</button>
-        <button class="work-tab" data-tab="articles">Articles</button>
-      </div>
-
-      <!-- Projects Tab -->
-      <div class="work-panel active" id="tab-projects">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-            <div class="article-list reveal-on-scroll">
-
-              <!-- Project 1 -->
-              <div class="article-item">
-                <span class="article-date">Completed · Case Study · Infrastructure</span>
-                <a href="https://github.com/voidhyr/go-load-balancer" target="_blank" rel="noopener noreferrer"
-                  class="article-title">HTTP Load Balancer</a>
-                <p class="article-desc">Building an L7 HTTP load balancer in Go from scratch — covering round-robin and
-                  least-connections algorithms, health checks, and backend pool management. Architecture grounded in AWS
-                  ELB, NGINX, and HAProxy with a focus on cloud infrastructure and IaaS scalability patterns.</p>
-                <span class="article-meta"><i class="fa-brands fa-github"></i> GitHub · Go · Networking · TCP/IP ·
-                  Infrastructure</span>
-              </div>
-
-            </div>
-          </div>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">Dani Sam</a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects"
+                >Work</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead text-white text-center hero-masthead">
+      <div class="container d-flex align-items-center flex-column hero-content">
+        <!-- Masthead Avatar Image-->
+        <img
+          class="masthead-avatar mb-4 about-photo"
+          src="assets/img/photo046.webp"
+          alt="Portrait of Dani Sam"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
 
-      <!-- Articles Tab -->
-      <div class="work-panel" id="tab-articles">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-            <div class="article-list reveal-on-scroll">
+        <!-- Small role badge -->
+        <span class="hero-badge mb-2">SOFTWARE DEVELOPMENT • DATA SYSTEMS</span>
 
-              <!-- Article 1 -->
-              <div class="article-item">
-                <span class="article-date">20 April 2026</span>
-                <a href="https://dev.to/voidhyr/my-load-balancer-worked-thats-what-made-me-uncomfortable-17gm"
-                  target="_blank" rel="noopener noreferrer" class="article-title">My load balancer worked. That's what
-                  made me uncomfortable.</a>
-                <p class="article-desc">Building the load balancer was the easy part. Understanding why it worked — and
-                  what that revealed about how little I actually knew — was a different story entirely.</p>
-                <span class="article-meta"><i class="fa-brands fa-dev"></i> dev.to · 2 min read</span>
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-1">Dani Sam</h1>
+
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <p class="masthead-subheading font-weight-light mb-3 hero-subtitle">
+          Aspiring Software Engineer | Python · SQL · Linux
+        </p>
+
+        <!-- Quote box -->
+        <div class="hero-quote-box">
+          <h6 id="quotes" class="mb-1">
+            "All of us do not have equal talent. But , all of us have an equal
+            opportunity to develop our talents."
+          </h6>
+          <footer id="quotes-name" class="mb-0">— Dr. APJ Abdul Kalam</footer>
+        </div>
+      </div>
+    </header>
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Services
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services bg-secondary">
+          <div class="container pb-4">
+            <div class="section-title"><br /></div>
+            <div class="row justify-content-center g-4">
+              <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+                <div class="service-card reveal-on-scroll">
+                  <div class="service-icon"><i class="bx bx-chip"></i></div>
+                  <h4>Python Development & Data Pipelines</h4>
+                  <p>
+                    Building Python tools, ETL scripts, and SQL-based data
+                    workflows. Currently learning workflow orchestration with
+                    Apache Airflow and using Docker for project environments.
+                  </p>
+                </div>
               </div>
 
-              <!-- Article 2 -->
-              <div class="article-item">
-                <span class="article-date">19 April 2026</span>
-                <a href="https://dev.to/voidhyr/the-architects-and-the-tenants-your-place-in-the-ai-driven-future-of-code-37lp"
-                  target="_blank" rel="noopener noreferrer" class="article-title">The Architects and the Tenants: Your
-                  Place in the AI-Driven Future of Code</a>
-                <p class="article-desc">AI can write code — but it can't replace system-level thinking. Why skills in
-                  systems, memory, concurrency, and networking will matter most in the age of AI.</p>
-                <span class="article-meta"><i class="fa-brands fa-dev"></i> dev.to · 2 min read</span>
+              <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+                <div class="service-card reveal-on-scroll">
+                  <div class="service-icon"><i class="bx bx-wrench"></i></div>
+                  <h4>Systems Setup & Support</h4>
+                  <p>
+                    OS installation and configuration, Linux setup, software
+                    troubleshooting, VM environments, and general computer
+                    support — getting systems running clean from the ground up.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Services Section -->
+      </div>
+    </section>
+    <!-- ======= Projects & Writing Section ======= -->
+    <section class="page-section bg-secondary" id="projects">
+      <div class="container">
+        <h2
+          class="page-section-heading text-center text-uppercase text-white mb-0"
+        >
+          Work
+        </h2>
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="work-tabs">
+          <button class="work-tab active" data-tab="projects">Projects</button>
+          <button class="work-tab" data-tab="articles">Articles</button>
+        </div>
+
+        <!-- Projects Tab -->
+        <div class="work-panel active" id="tab-projects">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="article-list reveal-on-scroll">
+                <!-- Project 1 -->
+                <div class="article-item">
+                  <span class="article-date"
+                    >Completed · Case Study · Infrastructure</span
+                  >
+                  <a
+                    href="https://github.com/voidhyr/go-load-balancer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="article-title"
+                    >HTTP Load Balancer</a
+                  >
+                  <p class="article-desc">
+                    Building an L7 HTTP load balancer in Go from scratch —
+                    covering round-robin and least-connections algorithms,
+                    health checks, and backend pool management. Architecture
+                    grounded in AWS ELB, NGINX, and HAProxy with a focus on
+                    cloud infrastructure and IaaS scalability patterns.
+                  </p>
+                  <span class="article-meta"
+                    ><i class="fa-brands fa-github"></i> GitHub · Go ·
+                    Networking · TCP/IP · Infrastructure</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Articles Tab -->
+        <div class="work-panel" id="tab-articles">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="article-list reveal-on-scroll">
+                <!-- Article 1 -->
+                <div class="article-item">
+                  <span class="article-date">20 April 2026</span>
+                  <a
+                    href="https://dev.to/voidhyr/my-load-balancer-worked-thats-what-made-me-uncomfortable-17gm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="article-title"
+                    >My load balancer worked. That's what made me
+                    uncomfortable.</a
+                  >
+                  <p class="article-desc">
+                    Building the load balancer was the easy part. Understanding
+                    why it worked — and what that revealed about how little I
+                    actually knew — was a different story entirely.
+                  </p>
+                  <span class="article-meta"
+                    ><i class="fa-brands fa-dev"></i> dev.to · 2 min read</span
+                  >
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-item">
+                  <span class="article-date">19 April 2026</span>
+                  <a
+                    href="https://dev.to/voidhyr/the-architects-and-the-tenants-your-place-in-the-ai-driven-future-of-code-37lp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="article-title"
+                    >The Architects and the Tenants: Your Place in the AI-Driven
+                    Future of Code</a
+                  >
+                  <p class="article-desc">
+                    AI can write code — but it can't replace system-level
+                    thinking. Why skills in systems, memory, concurrency, and
+                    networking will matter most in the age of AI.
+                  </p>
+                  <span class="article-meta"
+                    ><i class="fa-brands fa-dev"></i> dev.to · 2 min read</span
+                  >
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-item">
+                  <span class="article-date">Nov 2025</span>
+                  <a
+                    href="https://medium.com/p/477a3ad6e064"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="article-title"
+                    >The Architects and the Tenants</a
+                  >
+                  <p class="article-desc">
+                    AI can write code — but it can't replace system-level
+                    thinking. Why low-level computing skills in systems, memory,
+                    concurrency, and networking will matter most in the age of
+                    AI.
+                  </p>
+                  <span class="article-meta"
+                    ><i class="fab fa-medium"></i> Medium · 2 min read</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Work Section -->
+
+    <!-- About Section-->
+    <section
+      class="page-section text-white mb-0"
+      id="about"
+      style="background-color: #1abc9c"
+    >
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">
+          About
+        </h2>
+
+        <!-- ======= About Section ======= -->
+        <section class="about">
+          <!-- ======= About Me ======= -->
+          <div class="about-me container">
+            <div class="section-title">
+              <h2>About</h2>
+              <p>Learn more about me</p>
+            </div>
+
+            <div class="row reveal-on-scroll">
+              <div class="col-lg-4">
+                <img
+                  src="assets/img/photo046.webp"
+                  class="img-fluid about-photo"
+                  loading="lazy"
+                  alt=""
+                />
               </div>
 
-              <!-- Article 3 -->
-              <div class="article-item">
-                <span class="article-date">Nov 2025</span>
-                <a href="https://medium.com/p/477a3ad6e064" target="_blank" rel="noopener noreferrer"
-                  class="article-title">The Architects and the Tenants</a>
-                <p class="article-desc">AI can write code — but it can't replace system-level thinking. Why low-level
-                  computing skills in systems, memory, concurrency, and networking will matter most in the age of AI.
+              <div class="col-lg-8 pt-4 pt-lg-0 content about-right-panel">
+                <p class="fst-italic mb-2">
+                  I'm <span class="about-name">Dani Sam</span>
                 </p>
-                <span class="article-meta"><i class="fab fa-medium"></i> Medium · 2 min read</span>
-              </div>
+                <p class="about-tagline">
+                  I'm an aspiring Software Engineer interested in building
+                  useful software and understanding how systems work. Currently
+                  building projects with Python and SQL, exploring data
+                  pipelines, and learning through independent experiments. I'm
+                  also interested in exploring AI.
+                </p>
 
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- End Work Section -->
-
-  <!-- About Section-->
-  <section class="page-section  text-white mb-0" id="about" style="background-color: #1abc9c">
-    <div class="container">
-      <!-- About Section Heading-->
-      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-
-      <!-- ======= About Section ======= -->
-      <section class="about">
-
-        <!-- ======= About Me ======= -->
-        <div class="about-me container">
-
-          <div class="section-title">
-            <h2>About</h2>
-            <p>Learn more about me</p>
-          </div>
-
-          <div class="row reveal-on-scroll">
-            <div class="col-lg-4">
-              <img src="assets/img/photo046.webp" class="img-fluid about-photo" loading="lazy" alt="">
-            </div>
-
-            <div class="col-lg-8 pt-4 pt-lg-0 content about-right-panel">
-
-              <p class="fst-italic mb-2">
-                I'm <span class="about-name">Dani Sam</span>
-              </p>
-              <p class="about-tagline">
-                MSc Computer Science student targeting data engineering —
-                building Python data pipelines, SQL-based data models,
-                and workflow orchestration. Build first. Move data reliably.
-              </p>
-
-              <!-- Freelance badge -->
-              <div class="freelance-badge mb-3">
-                <span class="dot"></span>
-                Open to internships, research collaboration & freelance
-              </div>
-
-              <div class="row mt-2">
-                <div class="col-lg-6">
-                  <ul class="about-list">
-                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BCA · MSc CS
-                        (Pursuing)</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Kerala, India</span></li>
-                  </ul>
+                <!-- Freelance badge -->
+                <div class="freelance-badge mb-3">
+                  <span class="dot"></span>
+                  Open to internships, research collaboration & freelance
                 </div>
-                <div class="col-lg-6">
-                  <ul class="about-list">
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>danisam244@gmail.com</span>
-                    </li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                  </ul>
-                </div>
-              </div>
 
-              <!-- Tech pills instead of plain list -->
-              <div class="mt-4">
-                <h6 class="mb-2">Languages & tools I use</h6>
-                <div class="tech-pills">
-                  <span class="tech-pill">Python</span>
-                  <span class="tech-pill">SQL</span>
-                  <span class="tech-pill">Linux</span>
-                  <span class="tech-pill">Git</span>
-                  <span class="tech-pill">Docker</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div><!-- End About Me -->
-
-
-
-
-        <!-- ======= Skills  ======= -->
-        <div class="skills container pt-4">
-
-          <div class="section-title">
-            <h2>Skills</h2>
-          </div>
-
-          <div class="row skills-content">
-
-            <div class="col-lg-6">
-
-              <div class="progress">
-                <span class="skill">Linux <i class="val" data-target="65">0%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-progress="65">
+                <div class="row mt-2">
+                  <div class="col-lg-6">
+                    <ul class="about-list">
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Degree:</strong>
+                        <span>BCA · MSc CS (Pursuing)</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Location:</strong> <span>Kerala, India</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul class="about-list">
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Email:</strong>
+                        <span>danisam244@gmail.com</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Freelance:</strong> <span>Available</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
 
-              <div class="progress">
-                <span class="skill">SQL<i class="val" data-target="45">0%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-progress="45">
+                <!-- Tech pills instead of plain list -->
+                <div class="mt-4">
+                  <h6 class="mb-2">Languages & tools I use</h6>
+                  <div class="tech-pills">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">SQL</span>
+                    <span class="tech-pill">Linux</span>
+                    <span class="tech-pill">Git</span>
+                    <span class="tech-pill">Docker</span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <!-- End About Me -->
 
-            <div class="col-lg-6">
+          <!-- ======= Skills  ======= -->
+          <div class="skills container pt-4">
+            <div class="section-title">
+              <h2>Skills</h2>
+            </div>
 
-              <div class="progress">
-                <span class="skill">Python<i class="val" data-target="40">0%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-progress="40">
+            <div class="row skills-content">
+              <div class="col-lg-6">
+                <div class="progress">
+                  <span class="skill"
+                    >Linux <i class="val" data-target="65">0%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      data-progress="65"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill"
+                    >SQL<i class="val" data-target="45">0%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      data-progress="45"
+                    ></div>
                   </div>
                 </div>
               </div>
 
-              <div class="progress">
-                <span class="skill">Data Engineering<i class="val" data-target="18">0%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-progress="18">
+              <div class="col-lg-6">
+                <div class="progress">
+                  <span class="skill"
+                    >Python<i class="val" data-target="40">0%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      data-progress="40"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <span class="skill"
+                    >Data Engineering<i class="val" data-target="18"
+                      >0%</i
+                    ></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      data-progress="18"
+                    ></div>
                   </div>
                 </div>
               </div>
-
             </div>
-
           </div>
+          <!-- End Skills -->
 
-        </div><!-- End Skills -->
+          <!-- ======= Interests ======= -->
+          <div class="interests container">
+            <div class="section-title">
+              <h2>Interests</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-code-s-slash-line" style="color: #ffbb2c"></i>
+                  <h3>CODING</h3>
+                </div>
+              </div>
 
-        <!-- ======= Interests ======= -->
-        <div class="interests container">
-          <div class="section-title">
-            <h2>Interests</h2>
+              <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-microscope-line" style="color: #5578ff"></i>
+                  <h3>RESEARCH</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-book-open-line" style="color: #e80368"></i>
+                  <h3>READING</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-trophy-line" style="color: #e361ff"></i>
+                  <h3>CRICKET</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-ping-pong-line" style="color: #47aeff"></i>
+                  <h3>BADMINTON</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-gamepad-line" style="color: #ffa76e"></i>
+                  <h3>GAMING</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-car-line" style="color: #11dbcf"></i>
+                  <h3>AUTOMOBILE ARTICLES</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-film-line" style="color: #4233ff"></i>
+                  <h3>VIDEO EDITING</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-plane-line" style="color: #11dbcf"></i>
+                  <h3>TRAVELLING</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box interest-card reveal-on-scroll">
+                  <i class="ri-music-line" style="color: #4233ff"></i>
+                  <h3>MUSIC</h3>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="row">
-
-            <div class="col-lg-3 col-md-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-code-s-slash-line" style="color: #ffbb2c;"></i>
-                <h3>CODING</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-microscope-line" style="color: #5578ff;"></i>
-                <h3>RESEARCH</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-book-open-line" style="color: #e80368;"></i>
-                <h3>READING</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-trophy-line" style="color: #e361ff;"></i>
-                <h3>CRICKET</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-ping-pong-line" style="color: #47aeff;"></i>
-                <h3>BADMINTON</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-gamepad-line" style="color: #ffa76e;"></i>
-                <h3>GAMING</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-car-line" style="color: #11dbcf;"></i>
-                <h3>AUTOMOBILE ARTICLES</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-film-line" style="color: #4233ff;"></i>
-                <h3>VIDEO EDITING</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-plane-line" style="color: #11dbcf;"></i>
-                <h3>TRAVELLING</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box interest-card reveal-on-scroll">
-                <i class="ri-music-line" style="color: #4233ff;"></i>
-                <h3>MUSIC</h3>
-              </div>
-            </div>
-
-          </div>
-        </div><!-- End Interests -->
-
-      </section><!-- End inner about -->
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- Contact Section-->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <!-- Contact Section Heading-->
-      <h2 class="page-section-heading text-center text-uppercase text-C mb-0">Contact Me</h2>
-      <!-- Icon Divider-->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
+          <!-- End Interests -->
+        </section>
+        <!-- End inner about -->
       </div>
-      <!-- Contact Section Form-->
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-xl-7">
-          <form method="POST" action="" target="_self" id="submit-form">
-            <div class="form-floating pt-3">
-              <input class="form-control" id="inputName" type="text" placeholder="Enter your name..." name="name" />
-              <label for="inputName">Name</label>
-            </div>
-            <div class="form-floating pt-3">
-              <input class="form-control" id="inputEmail" type="email" placeholder="Enter your email..." name="email" />
-              <label for="inputEmail">Email address</label>
-            </div>
-            <div class="form-floating pt-3">
-              <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number..."
-                name="phone no:" />
-              <label for="inputPhone">Phone Number</label>
-            </div>
-            <div class="form-floating pt-3">
-              <textarea class="form-control" id="inputMessage" placeholder="Enter your message here..." name="message"
-                style="height: 12rem"></textarea>
-              <label for="inputMessage">Message</label>
-            </div>
-            <br />
-            <button class="btn btn-primary btn-xl" type="submit">Send</button>
-          </form>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-C mb-0">
+          Contact Me
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <form method="POST" action="" target="_self" id="submit-form">
+              <div class="form-floating pt-3">
+                <input
+                  class="form-control"
+                  id="inputName"
+                  type="text"
+                  placeholder="Enter your name..."
+                  name="name"
+                />
+                <label for="inputName">Name</label>
+              </div>
+              <div class="form-floating pt-3">
+                <input
+                  class="form-control"
+                  id="inputEmail"
+                  type="email"
+                  placeholder="Enter your email..."
+                  name="email"
+                />
+                <label for="inputEmail">Email address</label>
+              </div>
+              <div class="form-floating pt-3">
+                <input
+                  class="form-control"
+                  id="inputPhone"
+                  type="tel"
+                  placeholder="Enter your phone number..."
+                  name="phone no:"
+                />
+                <label for="inputPhone">Phone Number</label>
+              </div>
+              <div class="form-floating pt-3">
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  placeholder="Enter your message here..."
+                  name="message"
+                  style="height: 12rem"
+                ></textarea>
+                <label for="inputMessage">Message</label>
+              </div>
+              <br />
+              <button class="btn btn-primary btn-xl" type="submit">Send</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer-->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-        <!-- Footer Location-->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-
-        </div>
-        <!-- Footer Social Icons-->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <div class="footer-social">
-            <a class="btn btn-outline-light btn-social" href="https://github.com/voidhyr"><i
-                class="fab fa-fw fa-github"></i></a>
-            <a class="btn btn-outline-light btn-social" href="https://x.com/voidhyr" target="_blank"
-              rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-            <a class="btn btn-outline-light btn-social" href="https://medium.com/@voidhyr"><i
-                class="fa-brands fa-fw fa-medium-m"></i></a>
-            <a class="btn btn-outline-light btn-social" href="https://dev.to/@voidhyr" target="_blank"
-              rel="noopener noreferrer" aria-label="DEV.to"><i class="fa-brands fa-fw fa-dev"></i></a>
-            <a class="btn btn-outline-light btn-social" href="mailto:danisam244@gmail.com"><i
-                class="fa fa-envelope"></i></a>
-            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ds_for_danisam/?hl=en"><i
-                class="fab fa-fw fa-instagram"></i></a>
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0"></div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <div class="footer-social">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://github.com/voidhyr"
+                ><i class="fab fa-fw fa-github"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://x.com/voidhyr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://medium.com/@voidhyr"
+                ><i class="fa-brands fa-fw fa-medium-m"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://dev.to/@voidhyr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DEV.to"
+                ><i class="fa-brands fa-fw fa-dev"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="mailto:danisam244@gmail.com"
+                ><i class="fa fa-envelope"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.instagram.com/ds_for_danisam/?hl=en"
+                ><i class="fab fa-fw fa-instagram"></i
+              ></a>
+            </div>
           </div>
-
         </div>
-
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small
+          >Copyright &copy;
+          <a style="text-decoration: none" href="#page-top"
+            ><span style="color: greenyellow">Dani Sam</span></a
+          >
+          2026</small
+        >
       </div>
     </div>
-  </footer>
-  <!-- Copyright Section-->
-  <div class="copyright py-4 text-center text-white">
-    <div class="container"><small>Copyright &copy; <a style="text-decoration: none;" href="#page-top"><span
-            style="color: greenyellow;">Dani Sam</span></a> 2026</small></div>
-  </div>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Core theme JS-->
-  <script src="js/scripts.js"></script>
-  <script>
-    $("#submit-form").submit((e) => {
-      e.preventDefault()
-      $.ajax({
-        url: "#",
-        data: $("#submit-form").serialize(),
-        method: "post",
-        success: function (response) {
-          alert("Form submitted successfully")
-          window.location.reload()
-          //window.location.href="https://google.com"
-        },
-        error: function (err) {
-          alert("Sorry for the inconvenience. The service is still under maintenance.")
-
-        }
-      })
-    })
-  </script>
-</body>
-
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+      $("#submit-form").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+          url: "#",
+          data: $("#submit-form").serialize(),
+          method: "post",
+          success: function (response) {
+            alert("Form submitted successfully");
+            window.location.reload();
+            //window.location.href="https://google.com"
+          },
+          error: function (err) {
+            alert(
+              "Sorry for the inconvenience. The service is still under maintenance.",
+            );
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
