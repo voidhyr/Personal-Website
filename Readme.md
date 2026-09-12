@@ -1,17 +1,21 @@
 # voidhyr.github.io — Personal Portfolio
 
-> Aspiring Data Engineer. MSc CS student, Kerala, India.
-> Building in public — data to insights.
+> Aspiring Software Engineer interested in data systems, AI, and independent research.
+> Exploring the Void — From Curiosity to Creation.
 
-Live site → **[voidhyr.github.io/Personal-Website](https://voidhyr.github.io/Personal-Website)**
+**[Enter the Void → Personal Site](https://voidhyr.github.io/Personal-Website/)**
 
 ---
 
 ## About
 
-Personal portfolio site for **Dani Sam (voidhyr)** — a systems-focused engineer
-transitioning from BCA into Data Engineering. The site covers
-projects, writing, skills, and contact.
+Personal portfolio site for **Dani Sam (voidhyr)**, an aspiring software engineer
+who enjoys building useful software and understanding how systems work.
+The site brings together projects, writing, skills, and contact information.
+
+My current work includes Python tools, SQL-based projects, and data pipelines.
+I’m learning software development and exploring data systems, AI models,
+security, and Linux through small experiments and independent research.
 
 ---
 
@@ -76,6 +80,7 @@ python3 -m http.server 8000
 
 | Version | Description |
 |---|---|
+| Unreleased | Update README introduction to reflect software engineering, data systems, and independent research interests |
 | v1.6.0 | Rebrand — data engineering focus |
 | v1.5.0 | Rebrand — DevOps and automation engineering focus |
 | v1.4.0 | Migrated to Bootstrap 5.3.8 CDN, extracted custom.css, removed vendor folder |
